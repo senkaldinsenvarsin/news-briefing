@@ -6,13 +6,15 @@ Aşağıdaki metni olduğu gibi ChatGPT Codex'e yapıştır.
 
 ## Görev
 
-`/home/arda/news-briefing/` projesini geliştir.
+GitHub reposunu geliştir: https://github.com/senkaldinsenvarsin/news-briefing
+
+Yerel kopya: `/home/arda/news-briefing/`
 
 Bu proje Google Haberler RSS'inden ABD haberlerini toplar (yapay zeka, insansı robot, uzay).
 
 ## Kurallar
 
-- Kullanıcı GitHub bilmiyor — sadece yerel dosyalar
+- Değişiklikleri GitHub'a push et (`git add . && git commit -m "..." && git push`)
 - Açıklamalar ve kullanıcıya dönük metinler Türkçe olsun
 - Mümkünse sadece Python standart kütüphanesi (pip yok)
 - Mevcut dosya yapısını bozma, üzerine ekle
