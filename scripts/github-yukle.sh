@@ -10,8 +10,16 @@ if ! gh auth status >/dev/null 2>&1; then
   exit 1
 fi
 
-# Repo yoksa oluştur ve yükle
-if gh repo view "$(gh api user -q .login)/news-briefing" >/dev/null 2>&1; then
+KULLANICI=$(gh api user -q .login)
+REPO_URL="https://github.com/${KULLANICI}/news-briefing.git"
+
+gh auth setup-git
+
+if ! git remote get-url origin >/dev/null 2>&1; then
+  git remote add origin "$REPO_URL"
+fi
+
+if gh repo view "${KULLANICI}/news-briefing" >/dev/null 2>&1; then
   echo "Repo zaten var, güncelleniyor..."
   git push -u origin main
 else
