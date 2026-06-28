@@ -24,14 +24,28 @@ python3 src/main.py
 
 Başarılı olursa şunu görürsün:
 ```
-Rapor hazır: .../output/2026-06-28-onemli.md
+✓ Aday liste: .../output/2026-06-28-adaylar.md
 ```
 
 Bu dosyayı herhangi bir metin editörüyle açabilirsin.
 
 ---
 
-## Adım 2: Türkçe özet (ücretsiz yol)
+## Adım 2: Sosyal medya için haber seç
+
+`output/` klasöründeki `...-adaylar.md` dosyasını aç.
+
+Paylaşmak istediğin haberlerin numarasını seç ve örnek komutu çalıştır:
+
+```bash
+python3 src/main.py --post 1,3,7
+```
+
+Bu komut sadece seçtiğin haberler için post taslağı ve görsel promptu hazırlar.
+
+---
+
+## Adım 3: Türkçe özet (ücretsiz yol)
 
 1. `output/` klasöründeki `...-onemli.md` dosyasını aç
 2. İçeriği kopyala
@@ -42,7 +56,7 @@ Bu yol **yarı otomatik**: toplama otomatik, özet seninle birlikte.
 
 ---
 
-## Adım 3: Tam otomasyon (isteğe bağlı)
+## Adım 4: Tam otomasyon (isteğe bağlı)
 
 OpenAI hesabın varsa:
 
@@ -57,7 +71,7 @@ Bu sefer `...-turkce-ozet.md` dosyası da oluşur.
 
 ---
 
-## Adım 4: Her sabah otomatik çalışsın (isteğe bağlı)
+## Adım 5: Her sabah otomatik çalışsın (isteğe bağlı)
 
 Terminalde:
 ```bash

@@ -1,0 +1,2 @@
+# Bu proje şu an sadece Python standart kütüphanesini kullanır.
+# Kurulum için pip paketi gerekmez.

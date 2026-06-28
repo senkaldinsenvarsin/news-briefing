@@ -41,6 +41,7 @@
     }
   ],
   "max_onemli": 8,
+  "min_puan": 23,
   "guvenilir_kaynaklar": [
     "nasa.gov",
     "space.com",

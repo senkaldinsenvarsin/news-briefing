@@ -10,11 +10,12 @@ Program haberleri **toplar ve sıralar**. Haberleri **okuyup Türkçe özetleyen
 
 ### 1) Program (bilgisayarındaki kod)
 - Google Haberler'den listeyi çeker
+- Önemli aday linkleri açıp metin almaya çalışır
 - Gereksiz haberleri atar (hisse tavsiyesi vb.)
 - Önemli olanları puanlar
 - Dosyaya yazar
 
-**Haber okumaz.** Sadece başlık ve link toplar. İnsan gibi makale okumaz.
+Bu aşama yapay zeka değildir; token harcamaz. Sosyal medya postu ve görsel promptu, sen haber seçmeden üretilmez.
 
 ### 2) Özet yapay zekası (haber okuyan)
 İki seçenek:
@@ -71,7 +72,15 @@ cd ~/news-briefing
 python3 src/main.py
 ```
 
-Sonra `output/` klasöründeki `...-onemli.md` dosyasını aç.
+Sonra `output/` klasöründeki `...-adaylar.md` dosyasını aç.
+
+Paylaşacağın haberleri seç:
+
+```bash
+python3 src/main.py --post 1,3,7
+```
+
+Bu komut sadece seçtiğin haberler için sosyal medya metni ve görsel promptu üretir.
 
 Türkçe özet için dosyayı bana yapıştır:
 > Bu haberleri Türkçe özetle

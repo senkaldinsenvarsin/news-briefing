@@ -1,4 +1,7 @@
-# Haber Brifingi Ayarları
+# Haber Brifingi Ayarları (örnek/dokümantasyon)
+#
+# Program çalışırken gerçek ayar dosyası olarak config.json kullanır.
+# Bu dosya insan gözüyle daha kolay okunması için tutulur.
 
 bolge:
   dil: en-US
@@ -42,6 +45,7 @@ konular:
 
 # Raporda kaç önemli haber gösterilsin (konu başına)
 max_onemli: 8
+min_puan: 23
 
 # Bu kaynaklar daha yüksek puan alır
 guvenilir_kaynaklar:

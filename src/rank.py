@@ -95,7 +95,9 @@ def sirala_ve_sec(
     haberler: list[Haber],
     guvenilir_kaynaklar: list[str],
     max_adet: int,
+    min_puan: int = 0,
 ) -> list[tuple[Haber, int]]:
     puanli = [(h, puanla(h, guvenilir_kaynaklar)) for h in haberler]
+    puanli = [(h, p) for h, p in puanli if p >= min_puan]
     puanli.sort(key=lambda x: x[1], reverse=True)
     return puanli[:max_adet]

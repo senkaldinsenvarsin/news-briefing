@@ -19,6 +19,8 @@ class Haber:
     tarih: datetime | None
     konu_id: str
     konu_ad: str
+    kaynak_url: str = ""
+    icerik: str = ""
 
 
 def _rss_url(arama: str, dil: str, ulke: str, gun_sayisi: int) -> str:
@@ -80,6 +82,9 @@ def haberleri_cek(
 
         baslik = _temiz_baslik(baslik_el.text or "")
         kaynak = (kaynak_el.text if kaynak_el is not None else "") or "Bilinmiyor"
+        kaynak_url = ""
+        if kaynak_el is not None:
+            kaynak_url = kaynak_el.attrib.get("url", "").strip()
         link = (link_el.text or "").strip()
 
         if not baslik or not link:
@@ -93,6 +98,7 @@ def haberleri_cek(
                 tarih=_parse_tarih(tarih_el.text if tarih_el is not None else None),
                 konu_id=konu_id,
                 konu_ad=konu_ad,
+                kaynak_url=kaynak_url,
             )
         )
 
