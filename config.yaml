@@ -1,0 +1,60 @@
+# Haber Brifingi Ayarları
+
+bolge:
+  dil: en-US
+  ulke: US
+
+# Kaç günlük haberler (Google sorgusuna eklenir)
+gun_sayisi: 3
+
+konular:
+  - id: ai
+    ad: "Yapay Zeka"
+    emoji: "🤖"
+    arama: "artificial intelligence"
+    # Bu kelimeler geçen haberler düşük öncelik (hisse tavsiyesi vb.)
+    dusuk_oncelik:
+      - "stocks to buy"
+      - "stock to buy"
+      - "I'd buy"
+      - "never sell"
+      - "what is artificial intelligence"
+      - "what is AI"
+
+  - id: robot
+    ad: "İnsansı Robotlar"
+    emoji: "🦾"
+    arama: "humanoid robots"
+    dusuk_oncelik:
+      - "stocks to buy"
+      - "stock to buy"
+
+  - id: uzay
+    ad: "Uzay"
+    emoji: "🚀"
+    # "space" tek başına çok geniş; daha dar arama
+    arama: "NASA OR SpaceX OR \"space exploration\" OR astronomy OR \"space station\""
+    dusuk_oncelik:
+      - "safe space"
+      - "office space"
+      - "parking space"
+      - "pride prom"
+
+# Raporda kaç önemli haber gösterilsin (konu başına)
+max_onemli: 8
+
+# Bu kaynaklar daha yüksek puan alır
+guvenilir_kaynaklar:
+  - nasa.gov
+  - space.com
+  - spacenews.com
+  - reuters.com
+  - bloomberg.com
+  - cnbc.com
+  - theguardian.com
+  - nytimes.com
+  - nature.com
+  - openai.com
+  - google.com
+  - figure.ai
+  - bostondynamics.com

@@ -1,0 +1,59 @@
+{
+  "bolge": {"dil": "en-US", "ulke": "US"},
+  "gun_sayisi": 3,
+  "konular": [
+    {
+      "id": "ai",
+      "ad": "Yapay Zeka",
+      "emoji": "🤖",
+      "arama": "artificial intelligence",
+      "dusuk_oncelik": [
+        "stocks to buy",
+        "stock to buy",
+        "stock has dropped",
+        "stocks under",
+        "worst artificial intelligence stocks",
+        "I'd buy",
+        "never sell",
+        "analyst ai moves",
+        "what is artificial intelligence",
+        "what is AI"
+      ]
+    },
+    {
+      "id": "robot",
+      "ad": "İnsansı Robotlar",
+      "emoji": "🦾",
+      "arama": "humanoid robots",
+      "dusuk_oncelik": ["stocks to buy", "stock to buy"]
+    },
+    {
+      "id": "uzay",
+      "ad": "Uzay",
+      "emoji": "🚀",
+      "arama": "NASA OR SpaceX OR \"space exploration\" OR astronomy OR \"space station\"",
+      "dusuk_oncelik": [
+        "safe space",
+        "office space",
+        "parking space",
+        "pride prom"
+      ]
+    }
+  ],
+  "max_onemli": 8,
+  "guvenilir_kaynaklar": [
+    "nasa.gov",
+    "space.com",
+    "spacenews.com",
+    "reuters.com",
+    "bloomberg.com",
+    "cnbc.com",
+    "theguardian.com",
+    "nytimes.com",
+    "nature.com",
+    "openai.com",
+    "google.com",
+    "figure.ai",
+    "bostondynamics.com"
+  ]
+}

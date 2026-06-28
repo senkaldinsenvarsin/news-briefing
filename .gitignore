@@ -1,0 +1,10 @@
+# Gizli anahtarlar — asla GitHub'a yükleme
+.env
+
+# Otomatik üretilen raporlar (her gün değişir, gerek yok)
+output/*.md
+output/cron-log.txt
+
+# Python geçici dosyaları
+__pycache__/
+*.pyc
